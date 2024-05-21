@@ -4,28 +4,28 @@ function Footer() {
     <footer>
       <ul>
         <li>
-          <img src={footerLogo} alt="logo" />
+          <img className="footer-image" src={footerLogo} alt="logo" />
         </li>
         <li>
           <h1>Doormat Navigation</h1>
           <ul>
-            <li>
-              <a href="#home">Home</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#home">Home</a>
             </li>
-            <li>
-              <a href="#about">About</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">About</a>
             </li>
-            <li>
-              <a href="#Menu">Menu</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#Menu">Menu</a>
             </li>
-            <li>
-              <a href="#reservation">Reservations</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#reservation">Reservations</a>
             </li>
-            <li>
-              <a href="#order-online">Order Online</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#order-online">Order Online</a>
             </li>
-            <li>
-              <a href="#login">Login</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#login">Login</a>
             </li>
           </ul>
         </li>
