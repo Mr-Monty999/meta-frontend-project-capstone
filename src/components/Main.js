@@ -1,18 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Specials from "./Specials";
-import Testimonials from "./Testimonials";
-import Booking from "./Booking";
+import HomePage from "./HomePage";
+import AboutPage from "./AboutPage";
+import SpecialsPage from "./SpecialsPage";
+import TestimonialsPage from "./TestimonialsPage";
+import BookingPage from "./BookingPage";
 function Main() {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/specials" element={<Specials />}></Route>
-        <Route path="/testimonials" element={<Testimonials />}></Route>
-        <Route path="/booking" element={<Booking />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/about" element={<AboutPage />}></Route>
+        <Route path="/specials" element={<SpecialsPage />}></Route>
+        <Route path="/testimonials" element={<TestimonialsPage />}></Route>
+        <Route path="/booking" element={<BookingPage />}></Route>
       </Routes>
     </main>
   );
