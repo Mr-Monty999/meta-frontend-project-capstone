@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./App.css"
 // import "normalize.css"
+import "./assets/css/all.min.css"
 
 function App() {
   return (
