@@ -290,3 +290,6 @@ section {
 .p-relative{
   position: relative;
 }
+.nav-link:hover{
+  color: var(--primary-color1);
+}
