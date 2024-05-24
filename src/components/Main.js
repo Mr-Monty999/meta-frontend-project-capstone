@@ -16,7 +16,7 @@ function Main() {
   ];
 
   function updateTimes(state,action) {
-    // console.log(action)
+    // console.log(state)
     return initializeTimes;
   }
 

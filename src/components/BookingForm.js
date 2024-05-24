@@ -3,7 +3,7 @@ import { useState } from "react";
 function BookingForm({availableTimes,setAvailableTimes}) {
   const [formData, setFormData] = useState({
     date: "",
-    time: availableTimes[0],
+    time: availableTimes?availableTimes[0]:"",
     number_of_guests: 0,
     occasion: "",
   });
@@ -33,6 +33,7 @@ function BookingForm({availableTimes,setAvailableTimes}) {
         maxWidth: "200px",
         gap: "20px",
       }}
+      data-testid="booking_form"
     >
       <label htmlFor="date">Choose date</label>
       <input
@@ -41,6 +42,7 @@ function BookingForm({availableTimes,setAvailableTimes}) {
         type="date"
         id="date"
         name="date"
+        data-testid="date"
       />
       <label htmlFor="time">Choose time</label>
       <select
@@ -48,10 +50,11 @@ function BookingForm({availableTimes,setAvailableTimes}) {
         onChange={handleChange}
         id="time"
         name="time"
+        data-testid="time"
       >
-        {availableTimes.map((data,index) => {
+        {availableTimes?availableTimes.map((data,index) => {
            return <option key={index} value={data}>{data}</option>
-        })}
+        }):null}
       </select>
       <label htmlFor="number_of_guests">Number of guests</label>
       <input
@@ -63,6 +66,7 @@ function BookingForm({availableTimes,setAvailableTimes}) {
         max="10"
         id="number_of_guests"
         name="number_of_guests"
+        data-testid="number_of_guests"
       />
       <label htmlFor="occasion">Occasion</label>
       <select
@@ -70,6 +74,7 @@ function BookingForm({availableTimes,setAvailableTimes}) {
         onChange={handleChange}
         name="occasion"
         id="occasion"
+        data-testid="occasion"
       >
         <option>Birthday</option>
         <option>Anniversary</option>
@@ -78,6 +83,7 @@ function BookingForm({availableTimes,setAvailableTimes}) {
         className="btn bg-primary-1"
         type="submit"
         value="Make Your reservation"
+        data-testid="submit_button"
       />
     </form>
   );
