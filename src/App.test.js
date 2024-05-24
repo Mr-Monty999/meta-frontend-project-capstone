@@ -15,7 +15,7 @@ test("Renders the BookingPage heading", () => {
   expect(headingElement).toBeInTheDocument();
 });
 
-test("initializeTimes in booking form is working", () => {
+test("initializeTimes is working in booking form", () => {
   render(
     <MemoryRouter initialEntries={["/booking"]}>
       <Main />
@@ -26,7 +26,7 @@ test("initializeTimes in booking form is working", () => {
   expect(element.hasChildNodes()).toBe(true);
 });
 
-test("updateTimes in booking form is working", () => {
+test("updateTimes is working in booking form", () => {
   render(
     <MemoryRouter initialEntries={["/booking"]}>
       <Main />

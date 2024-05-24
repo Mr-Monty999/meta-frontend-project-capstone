@@ -302,3 +302,11 @@ section {
 .text-success{
   color: rgb(2, 255, 86);
 }
+.text-danger{
+  color: red;
+  font-weight: bold;
+}
+.btn:disabled{
+  background-color: #495e57;
+  cursor:not-allowed;
+}

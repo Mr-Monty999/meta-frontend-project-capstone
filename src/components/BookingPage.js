@@ -22,9 +22,8 @@ function Booking() {
     initializeTimes
   );
 
-  const submitForm = (event) => {
-    event.preventDefault();
-    // console.log(formData);
+  const submitForm = (data) => {
+    // console.log(data);
     navigate("/confirmed-booking");
   };
 
