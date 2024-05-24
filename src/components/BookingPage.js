@@ -1,8 +1,8 @@
 import BookingForm from "./BookingForm";
-function Booking() {
+function Booking({availableTimes,setAvailableTimes}) {
   return (
     <section className="booking-section d-flex justify-content-center">
-      <BookingForm />
+      <BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes}/>
     </section>
   );
 }
