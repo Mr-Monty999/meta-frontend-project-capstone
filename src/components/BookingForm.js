@@ -1,17 +1,19 @@
 import { useState } from "react";
+import { redirect, useNavigate } from "react-router-dom";
 
-function BookingForm({availableTimes,setAvailableTimes}) {
+function BookingForm({ availableTimes, setAvailableTimes }) {
   const [formData, setFormData] = useState({
     date: "",
-    time: availableTimes?availableTimes[0]:"",
+    time: availableTimes ? availableTimes[0] : "",
     number_of_guests: 0,
     occasion: "",
   });
 
+  const navigate = useNavigate();
 
   const handleChange = (event) => {
-    if(event.target.name === "date"){
-      setAvailableTimes(event.target.value)
+    if (event.target.name === "date") {
+      setAvailableTimes(event.target.value);
     }
     const { name, value } = event.target;
     setFormData({
@@ -20,14 +22,21 @@ function BookingForm({availableTimes,setAvailableTimes}) {
     });
   };
 
-  const handleSubmit = (event) => {
+  const submitForm = (event) => {
     event.preventDefault();
-    console.log(formData);
+    // console.log(formData);
+    setFormData({
+      date: "",
+      time: availableTimes ? availableTimes[0] : "",
+      number_of_guests: 0,
+      occasion: "",
+    });
+    navigate("/confirmed-booking")
   };
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={submitForm}
       style={{
         display: "grid",
         maxWidth: "200px",
@@ -52,9 +61,15 @@ function BookingForm({availableTimes,setAvailableTimes}) {
         name="time"
         data-testid="time"
       >
-        {availableTimes?availableTimes.map((data,index) => {
-           return <option key={index} value={data}>{data}</option>
-        }):null}
+        {availableTimes
+          ? availableTimes.map((data, index) => {
+              return (
+                <option key={index} value={data}>
+                  {data}
+                </option>
+              );
+            })
+          : null}
       </select>
       <label htmlFor="number_of_guests">Number of guests</label>
       <input

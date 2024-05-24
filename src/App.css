@@ -57,7 +57,7 @@
   grid-template-rows: auto auto auto;
 }
 header {
-  background-color: white;
+  /* background-color: white; */
   padding: 50px;
 }
 footer {
@@ -297,4 +297,8 @@ section {
 
 .btn:hover{
   background-color: var(--primary-color2);
+}
+
+.text-success{
+  color: rgb(2, 255, 86);
 }

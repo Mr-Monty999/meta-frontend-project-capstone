@@ -2,7 +2,7 @@ import Nav from "./Nav";
 
 function Header() {
   return (
-    <header>
+    <header className="bg-secondary-3">
       <Nav />
     </header>
   );

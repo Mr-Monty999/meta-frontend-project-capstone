@@ -4,6 +4,7 @@ import AboutPage from "./AboutPage";
 import SpecialsPage from "./SpecialsPage";
 import TestimonialsPage from "./TestimonialsPage";
 import BookingPage from "./BookingPage";
+import ConfirmedBookingPage from "./ConfirmedBookingPage";
 import { useReducer, useState } from "react";
 function Main() {
   const initializeTimes = [
@@ -15,7 +16,7 @@ function Main() {
     "22:00",
   ];
 
-  function updateTimes(state,action) {
+  function updateTimes(state, action) {
     // console.log(state)
     return initializeTimes;
   }
@@ -41,6 +42,7 @@ function Main() {
             />
           }
         ></Route>
+        <Route path="/confirmed-booking" element={<ConfirmedBookingPage />}></Route>
       </Routes>
     </main>
   );
