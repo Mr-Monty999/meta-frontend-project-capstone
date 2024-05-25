@@ -49,7 +49,7 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
           }}
           data-testid="booking_form"
         >
-          <label htmlFor="date">Choose date</label>
+          <label aria-label="on " htmlFor="date">Choose date</label>
           <Field
             // value={formik.values.date}
             // onChange={formik.handleChange}
@@ -127,6 +127,7 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
             type="submit"
             value="Make Your reservation"
             data-testid="submit_button"
+            aria-label="On Click"
           />
         </Form>
       )}
