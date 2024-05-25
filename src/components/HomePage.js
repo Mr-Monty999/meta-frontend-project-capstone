@@ -9,7 +9,7 @@ function Home() {
         It is a long established fact that a reader will be distracted by the
         readable content of a
       </p>
-      <button className="btn bg-primary-1" role="button">
+      <button aria-label="On Click" className="btn bg-primary-1" role="button">
         Reserve Table
       </button>
       <img alt="dish" src={restaurantFoodImage} />

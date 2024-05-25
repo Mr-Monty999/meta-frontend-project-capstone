@@ -7,7 +7,7 @@ function Specials() {
     <section className="highlights-section">
       <div className="highlights-section-header">
         <h1 className="super-title">This Weeks Specials</h1>
-        <button className="btn bg-primary-1" role="button">
+        <button aria-label="On Click" className="btn bg-primary-1" role="button">
           Online Menu
         </button>
       </div>
@@ -23,7 +23,7 @@ function Specials() {
               It is a long established fact that a reader will be distracted by
               the readable content of a
             </p>
-            <button className="btn bg-primary-1 dish-button">
+            <button aria-label="On Click" className="btn bg-primary-1 dish-button">
               Order a Delivery
             </button>
           </div>
@@ -39,7 +39,7 @@ function Specials() {
               It is a long established fact that a reader will be distracted by
               the readable content of a
             </p>
-            <button className="btn bg-primary-1 dish-button">
+            <button aria-label="On Click" className="btn bg-primary-1 dish-button">
               Order a Delivery
             </button>
           </div>
@@ -55,7 +55,7 @@ function Specials() {
               It is a long established fact that a reader will be distracted by
               the readable content of a
             </p>
-            <button className="btn bg-primary-1 dish-button">
+            <button aria-label="On Click" className="btn bg-primary-1 dish-button">
               Order a Delivery
             </button>
           </div>
