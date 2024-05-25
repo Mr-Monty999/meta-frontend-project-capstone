@@ -307,6 +307,6 @@ section {
   font-weight: bold;
 }
 .btn:disabled{
-  background-color: #495e57;
+  background-color: silver;
   cursor:not-allowed;
 }

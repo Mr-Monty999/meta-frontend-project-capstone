@@ -39,7 +39,7 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
         submitForm(values);
       }}
     >
-      {({ isValid, isSubmitting, errors, touched }) => (
+      {({ isValid, isSubmitting, errors, touched,dirty }) => (
         <Form
           // onSubmit={formik.handleSubmit}
           style={{
@@ -122,7 +122,7 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
           </p>
 
           <input
-            disabled={!isValid}
+            disabled={!isValid || !dirty}
             className="btn bg-primary-1"
             type="submit"
             value="Make Your reservation"
