@@ -296,7 +296,7 @@ section {
 }
 
 .btn:hover{
-  background-color: var(--primary-color2);
+  background-color: var(--secondary-color1);
 }
 
 .text-success{
